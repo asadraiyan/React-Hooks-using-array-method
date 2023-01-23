@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+ body{
+    padding:0;
+    margin: 0;
+    background-color: rgb(176, 224, 230);
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 475px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px lightcoral;
+}
+
