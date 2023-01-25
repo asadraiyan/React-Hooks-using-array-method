@@ -3,9 +3,96 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: rgb(246, 201, 208); */
+}
+body{
+  background-color: rgb(177, 177, 203)
+}
+nav{
+  display: flex;
+  background-color:#f43333;
+  justify-content: space-between;
+  align-items: center;
+}
+.navlink {
+  display: flex;
+  gap: 1.5rem;
+  padding: 10px;
+  align-items: center;
+}
+.navlink a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: 'Comfortaa', cursive;
 }
 h1{
-  color: blueviolet;
   font-family: 'Comfortaa', cursive;
+  margin-bottom: 50px;
+}
+.container{
+ 
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  height: 60vh;
+  top: 23%;
+  left: 35%;
+  background-color: #f3f3f3;
+  box-shadow: 1px 1px 2px 2px;
+  border-radius: 10px;
+}
+.box{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  font-family: 'Comfortaa', cursive;
+  
+}
+.name{
+  width: 20vw;
+  height: 35px;
+  font-size: 20px;
+  border-radius: 5px;
+  font-family: 'Comfortaa', cursive;
+  box-shadow: 1px 1px 1px 1px rgb(180, 159, 201);
+  border: none;
+  outline: none;
+}
+.email{
+  width: 20vw;
+  height: 35px;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgb(180, 159, 201);
+  font-family: 'Comfortaa', cursive;
+  border: none;
+  outline: none;
+}
+.phnum{
+  width: 20vw;
+  height: 35px;
+  font-size: 20px;
+  border-radius: 5px;
+  font-family: 'Comfortaa', cursive;
+  box-shadow: 1px 1px 1px 1px rgb(180, 159, 201);;
+  border: none;
+  outline: none;
+}
+button{
+  font-size: 20px;
+  background-color:  #3498db;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 5px 5px 5px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 1px 1px 1px 1px black;
+  margin-top: 30px;
 }

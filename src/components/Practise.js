@@ -33,7 +33,7 @@ setCount(count + 1)
     <>
         <div>
       <h1>{`My name is ${flname}`}</h1>
-      <p style={{fontSize: "25px", backgroundColor: "orange"}}>Today the date is = {currDate} </p>
+      <p style={{fontSize: "25px", color: "orange"}}>Today the date is = {currDate} </p>
       <p style={{fontSize: "25px", color: "red"}}>Current time is = {currTime} </p>
       <img src={props.img} alt="randomImages" />
       <h1>{count}</h1>
