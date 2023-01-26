@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color: rgb(177, 177, 203)
+  /* background-color: rgb(177, 177, 203) */
 }
 nav{
   display: flex;
@@ -42,7 +42,7 @@ h1{
   top: 23%;
   left: 35%;
   background-color: #f3f3f3;
-  box-shadow: 1px 1px 2px 2px;
+  box-shadow: 1px 1px 1px 1px;
   border-radius: 10px;
 }
 .box{
@@ -85,6 +85,14 @@ h1{
   border: none;
   outline: none;
 }
+.btn{
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 20vw;
+
+}
 button{
   font-size: 20px;
   background-color:  #3498db;
@@ -96,3 +104,21 @@ button{
   box-shadow: 1px 1px 1px 1px black;
   margin-top: 30px;
 }
+.searchbar{
+  margin-top: 50px;
+  text-align: center;
+}
+.searchbar input{
+  padding: 5px 10px;
+  height: 40%;
+  width: 20vw;
+  height: 5vh;
+  font-size: 20px;
+  outline: none;
+  border-radius: 5px;
+  font-family: 'Comfortaa', cursive;
+  box-shadow: 1px 1px 1px 1px grey;
+  border: none;
+}
+
+ 
