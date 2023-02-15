@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body{
-  /* background-color: rgb(177, 177, 203) */
+  background-color: rgb(177, 177, 203)
 }
 nav{
   display: flex;
