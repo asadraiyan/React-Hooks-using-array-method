@@ -1,5 +1,5 @@
 import React from 'react'
-import { FirstName } from './App'
+import { FirstName } from './CompA'
 const CompC = () => {
     return (
         <div>

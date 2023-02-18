@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { createContext } from 'react'
 import CompB from './CompB'
-
+const FirstName = createContext()
 const CompA = () => {
     return (
         <div>
-            <CompB />
+            <FirstName.Provider value={"Asad Raiyan"}>
+                <CompB />
+            </FirstName.Provider>
+
         </div>
     )
 }
 
 export default CompA
+export { FirstName }
