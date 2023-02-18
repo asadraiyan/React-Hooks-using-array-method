@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { createContext } from 'react'
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
 import CompA from './components/CompA';
@@ -11,9 +11,11 @@ import CompA from './components/CompA';
 // import Miniproject from './components/Miniproject';
 // import Practise from './components/Practise';
 // import UsestateObject from './components/UsestateObject';
+const FirstName = createContext()
 const App = () => {
   // const name = "Asad Raiyan"
   // const role = "Web Dev"
+
   return (
     <>
       {/* <Router>
@@ -27,7 +29,9 @@ const App = () => {
         {/* <Miniproject/> */}
         {/* <HooksUseState/> */}
         {/* <UsestateObject /> */}
-        <CompA />
+        <FirstName.Provider value={"Asad Raiyan"}>
+          <CompA />
+        </FirstName.Provider>
 
         {/* </Routes> */}
       </div>
@@ -36,4 +40,5 @@ const App = () => {
   )
 }
 export default App
+export { FirstName }
 

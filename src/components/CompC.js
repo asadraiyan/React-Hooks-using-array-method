@@ -1,9 +1,13 @@
 import React from 'react'
-
+import { FirstName } from './App'
 const CompC = () => {
     return (
         <div>
-            <h1>My Name is Asad Raiyan</h1>
+            <FirstName.Consumer>
+                {(fname) => {
+                    return <h1>My Name is {fname}</h1>
+                }}
+            </FirstName.Consumer>
         </div>
     )
 }

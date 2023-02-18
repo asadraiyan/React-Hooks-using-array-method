@@ -4,7 +4,7 @@ import CompB from './CompB'
 const CompA = () => {
     return (
         <div>
-            <CompB name={"Asad Raiyan Web Dev"} />
+            <CompB />
         </div>
     )
 }
