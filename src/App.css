@@ -1,24 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   background-color: rgb(177, 177, 203)
 }
-nav{
+
+nav {
   display: flex;
-  background-color:#f43333;
+  background-color: #f43333;
   justify-content: space-between;
   align-items: center;
 }
+
 .navlink {
   display: flex;
   gap: 1.5rem;
   padding: 10px;
   align-items: center;
 }
+
 .navlink a {
   text-decoration: none;
   color: white;
@@ -26,12 +31,14 @@ nav{
   font-size: 1.2rem;
   font-family: 'Comfortaa', cursive;
 }
-h1{
+
+h1 {
   font-family: 'Comfortaa', cursive;
   margin-bottom: 50px;
 }
-.container{
- 
+
+.container {
+
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -45,17 +52,19 @@ h1{
   box-shadow: 1px 1px 1px 1px;
   border-radius: 10px;
 }
-.box{
-  
+
+.box {
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
   font-family: 'Comfortaa', cursive;
-  
+
 }
-.name{
+
+.name {
   width: 20vw;
   height: 35px;
   font-size: 20px;
@@ -65,7 +74,8 @@ h1{
   border: none;
   outline: none;
 }
-.email{
+
+.email {
   width: 20vw;
   height: 35px;
   font-size: 20px;
@@ -75,17 +85,20 @@ h1{
   border: none;
   outline: none;
 }
-.phnum{
+
+.phnum {
   width: 20vw;
   height: 35px;
   font-size: 20px;
   border-radius: 5px;
   font-family: 'Comfortaa', cursive;
-  box-shadow: 1px 1px 1px 1px rgb(180, 159, 201);;
+  box-shadow: 1px 1px 1px 1px rgb(180, 159, 201);
+  ;
   border: none;
   outline: none;
 }
-.btn{
+
+.btn {
   /* border: 2px solid red; */
   display: flex;
   flex-direction: row;
@@ -93,9 +106,10 @@ h1{
   width: 20vw;
 
 }
-button{
+
+button {
   font-size: 20px;
-  background-color:  #3498db;
+  background-color: #3498db;
   color: white;
   border-radius: 3px;
   padding: 5px 5px 5px 5px;
@@ -104,11 +118,13 @@ button{
   box-shadow: 1px 1px 1px 1px black;
   margin-top: 30px;
 }
-.searchbar{
+
+.searchbar {
   margin-top: 50px;
   text-align: center;
 }
-.searchbar input{
+
+.searchbar input {
   padding: 5px 10px;
   height: 40%;
   width: 20vw;
@@ -121,4 +137,10 @@ button{
   border: none;
 }
 
- 
+.count {
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  left: 150px;
+  bottom: 25px;
+}
