@@ -1,7 +1,8 @@
 
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import './App.css';
-import CompA from './components/CompA';
+// import './App.css';
+// import CompA from './components/CompA';
+import Reactlifecyclemethod from './Reactlifecyclemethod';
 // import Home from './components/Home';
 // import Search from './components/Search';
 // import Contact from './components/Contact';
@@ -30,7 +31,8 @@ const App = () => {
         {/* <HooksUseState/> */}
         {/* <UsestateObject /> */}
 
-        <CompA />
+        {/* <CompA /> */}
+        <Reactlifecyclemethod />
 
 
         {/* </Routes> */}
