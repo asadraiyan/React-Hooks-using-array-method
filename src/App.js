@@ -2,7 +2,10 @@
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import './App.css';
 // import CompA from './components/CompA';
-import Reactlifecyclemethod from './Reactlifecyclemethod';
+// import Reactlifecyclemethod from './Reactlifecyclemethod';
+
+import Userefhook from "./components/Userefhook"
+
 // import Home from './components/Home';
 // import Search from './components/Search';
 // import Contact from './components/Contact';
@@ -32,7 +35,8 @@ const App = () => {
         {/* <UsestateObject /> */}
 
         {/* <CompA /> */}
-        <Reactlifecyclemethod />
+        {/* <Reactlifecyclemethod /> */}
+        <Userefhook />
 
 
         {/* </Routes> */}
