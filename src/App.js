@@ -3,9 +3,12 @@
 // import './App.css';
 // import CompA from './components/CompA';
 // import Reactlifecyclemethod from './Reactlifecyclemethod';
-
-import Userefhook from "./components/Userefhook"
-
+// import Table from "./components/Table"
+// import Counter from "./components/Counter"
+// import Inputdisplay from "./components/Inputdisplay"
+// import QuoteGen from "./components/QuoteGen"
+// import Usememohook from "./components/Usememohook"
+// import Userefhook from "./components/Userefhook"
 // import Home from './components/Home';
 // import Search from './components/Search';
 // import Contact from './components/Contact';
@@ -15,6 +18,10 @@ import Userefhook from "./components/Userefhook"
 // import Miniproject from './components/Miniproject';
 // import Practise from './components/Practise';
 // import UsestateObject from './components/UsestateObject';
+// import Assignment from "./components/Assignment"
+// import LandingPage from "./LandingPage"
+import InputForm from "./components/InputForm"
+// import NoteApp from "./components/NoteApp"
 
 const App = () => {
   // const name = "Asad Raiyan"
@@ -36,7 +43,16 @@ const App = () => {
 
         {/* <CompA /> */}
         {/* <Reactlifecyclemethod /> */}
-        <Userefhook />
+        {/* <Userefhook /> */}
+        {/* <Usememohook /> */}
+        {/* <Counter /> */}
+        {/* <NoteApp /> */}
+        {/* <LandingPage /> */}
+        <InputForm />
+        {/* <Inputdisplay /> */}
+        {/* <QuoteGen /> */}
+        {/* <Assignment /> */}
+        {/* <Table /> */}
 
 
         {/* </Routes> */}
