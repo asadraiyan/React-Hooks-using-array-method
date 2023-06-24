@@ -20,8 +20,9 @@
 // import UsestateObject from './components/UsestateObject';
 // import Assignment from "./components/Assignment"
 // import LandingPage from "./LandingPage"
-import InputForm from "./components/InputForm"
+// import InputForm from "./components/InputForm"
 // import NoteApp from "./components/NoteApp"
+import Axios from "./components/Axios"
 
 const App = () => {
   // const name = "Asad Raiyan"
@@ -48,7 +49,8 @@ const App = () => {
         {/* <Counter /> */}
         {/* <NoteApp /> */}
         {/* <LandingPage /> */}
-        <InputForm />
+        {/* <InputForm /> */}
+        <Axios />
         {/* <Inputdisplay /> */}
         {/* <QuoteGen /> */}
         {/* <Assignment /> */}
