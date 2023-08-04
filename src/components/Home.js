@@ -1,30 +1,34 @@
-import React, { useReducer } from 'react'
-const initialState = 0
+import React, { useReducer } from "react";
+const initialState = 0;
 const reducer = (state, action) => {
   if (action.type === "Increment") {
-    return state + 1
+    return state + 1;
   }
   if (action.type === "Decrement") {
-    return state - 1
+    return state - 1;
   }
-}
+};
 
-const Home = (props) => {
-  const [state, dispatch] = useReducer(reducer, initialState)
+const Home = ({ name, role }) => {
+  const [state, dispatch] = useReducer(reducer, initialState);
   return (
     <>
       <div>
-        <h1>My name is {props.myName} & my role is {props.myRole}</h1>
+        <h1>
+          My name is {name} & my role is {role}
+        </h1>
       </div>
       <div className="btn">
-        <p className='count'>{state}</p>
-        <button onClick={() => dispatch({ type: "Increment" })}>Increment</button>
-        <button onClick={() => dispatch({ type: "Decrement" })}>Decrement</button>
+        <p className="count">{state}</p>
+        <button onClick={() => dispatch({ type: "Increment" })}>
+          Increment
+        </button>
+        <button onClick={() => dispatch({ type: "Decrement" })}>
+          Decrement
+        </button>
       </div>
     </>
+  );
+};
 
-
-  )
-}
-
-export default Home
+export default Home;

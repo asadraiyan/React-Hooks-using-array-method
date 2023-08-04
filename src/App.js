@@ -1,11 +1,11 @@
-
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import './App.css';
 // import CompA from './components/CompA';
 // import Reactlifecyclemethod from './Reactlifecyclemethod';
-// import Table from "./components/Table"
+import AgeCalculator from "./components/AgeCalculator";
+// import Table from "./components/Table";
 // import Counter from "./components/Counter"
-// import Inputdisplay from "./components/Inputdisplay"
+// import Inputdisplay from "./components/Inputdisplay";
 // import QuoteGen from "./components/QuoteGen"
 // import Usememohook from "./components/Usememohook"
 // import Userefhook from "./components/Userefhook"
@@ -20,9 +20,9 @@
 // import UsestateObject from './components/UsestateObject';
 // import Assignment from "./components/Assignment"
 // import LandingPage from "./LandingPage"
-// import InputForm from "./components/InputForm"
+// import InputForm from "./components/InputForm";
 // import NoteApp from "./components/NoteApp"
-import Axios from "./components/Axios"
+// import Axios from "./components/Axios";
 
 const App = () => {
   // const name = "Asad Raiyan"
@@ -50,19 +50,17 @@ const App = () => {
         {/* <NoteApp /> */}
         {/* <LandingPage /> */}
         {/* <InputForm /> */}
-        <Axios />
+        {/* <Axios /> */}
         {/* <Inputdisplay /> */}
         {/* <QuoteGen /> */}
         {/* <Assignment /> */}
         {/* <Table /> */}
-
+        <AgeCalculator />
 
         {/* </Routes> */}
       </div>
       {/* </Router> */}
     </>
-  )
-}
-export default App
-
-
+  );
+};
+export default App;
