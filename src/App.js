@@ -2,7 +2,8 @@
 // import './App.css';
 // import CompA from './components/CompA';
 // import Reactlifecyclemethod from './Reactlifecyclemethod';
-import AgeCalculator from "./components/AgeCalculator";
+// import AgeCalculator from "./components/AgeCalculator";
+import CodingChallenge from "./components/CodingChallenge";
 // import Table from "./components/Table";
 // import Counter from "./components/Counter"
 // import Inputdisplay from "./components/Inputdisplay";
@@ -55,7 +56,8 @@ const App = () => {
         {/* <QuoteGen /> */}
         {/* <Assignment /> */}
         {/* <Table /> */}
-        <AgeCalculator />
+        {/* <AgeCalculator /> */}
+        <CodingChallenge />
 
         {/* </Routes> */}
       </div>
