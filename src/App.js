@@ -3,7 +3,8 @@
 // import CompA from './components/CompA';
 // import Reactlifecyclemethod from './Reactlifecyclemethod';
 // import AgeCalculator from "./components/AgeCalculator";
-import CodingChallenge from "./components/CodingChallenge";
+// import CodingChallenge from "./components/CodingChallenge";
+import PasswordGen from "./components/PasswordGen";
 // import Table from "./components/Table";
 // import Counter from "./components/Counter"
 // import Inputdisplay from "./components/Inputdisplay";
@@ -57,7 +58,8 @@ const App = () => {
         {/* <Assignment /> */}
         {/* <Table /> */}
         {/* <AgeCalculator /> */}
-        <CodingChallenge />
+        {/* <CodingChallenge /> */}
+        <PasswordGen />
 
         {/* </Routes> */}
       </div>

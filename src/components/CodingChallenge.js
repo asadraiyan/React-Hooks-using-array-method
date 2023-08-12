@@ -48,8 +48,8 @@ const CodingChallenge = () => {
           placeholder="Enter your message"
         />
         <ol>
-          {item.map((curValue) => {
-            return <li>{curValue}</li>;
+          {item.map((curValue, index) => {
+            return <li key={index}>{curValue}</li>;
           })}
         </ol>
       </div>
