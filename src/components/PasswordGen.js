@@ -8,6 +8,7 @@ const PasswordGen = () => {
   const numbers = "0123456789";
   const specialChar = "!'^+%&/()=?_#$½§{[]}|;:>÷`<.*-@é";
   let characterList = "";
+
   const handleGenerate = () => {
     if (input) {
       characterList = characterList + upperCase;
@@ -16,7 +17,10 @@ const PasswordGen = () => {
       characterList = characterList + specialChar;
     }
     setInput(createPassword(characterList));
+    console.log(characterList);
+    console.log(characterList.length);
   };
+
   const createPassword = (characterList) => {
     let password = "";
     for (let i = 0; i < 10; i++) {
