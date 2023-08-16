@@ -11,7 +11,7 @@
 // import Counter from "./components/Counter"
 // import Inputdisplay from "./components/Inputdisplay";
 // import QuoteGen from "./components/QuoteGen"
-import UseCallback from "./components/UseCallback";
+// import UseCallback from "./components/UseCallback";
 // import Usememohook from "./components/Usememohook";
 // import Userefhook from "./components/Userefhook"
 // import Home from './components/Home';
@@ -28,6 +28,7 @@ import UseCallback from "./components/UseCallback";
 // import InputForm from "./components/InputForm";
 // import NoteApp from "./components/NoteApp"
 // import Axios from "./components/Axios";
+import UseContext from "./components/ContextHook/UseContext";
 
 const App = () => {
   // const name = "Asad Raiyan"
@@ -51,7 +52,8 @@ const App = () => {
         {/* <Reactlifecyclemethod /> */}
         {/* <Userefhook /> */}
         {/* <Usememohook /> */}
-        <UseCallback />
+        {/* <UseCallback /> */}
+        <UseContext />
         {/* <Counter /> */}
         {/* <NoteApp /> */}
         {/* <LandingPage /> */}
