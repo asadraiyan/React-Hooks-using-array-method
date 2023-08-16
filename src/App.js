@@ -11,7 +11,8 @@
 // import Counter from "./components/Counter"
 // import Inputdisplay from "./components/Inputdisplay";
 // import QuoteGen from "./components/QuoteGen"
-import Usememohook from "./components/Usememohook";
+import UseCallback from "./components/UseCallback";
+// import Usememohook from "./components/Usememohook";
 // import Userefhook from "./components/Userefhook"
 // import Home from './components/Home';
 // import Search from './components/Search';
@@ -49,7 +50,8 @@ const App = () => {
         {/* <CompA /> */}
         {/* <Reactlifecyclemethod /> */}
         {/* <Userefhook /> */}
-        <Usememohook />
+        {/* <Usememohook /> */}
+        <UseCallback />
         {/* <Counter /> */}
         {/* <NoteApp /> */}
         {/* <LandingPage /> */}
