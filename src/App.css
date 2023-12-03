@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
 * {
   margin: 0;
@@ -13,7 +13,6 @@
   align-items: center;
   width: 45vw;
   margin-top: 50px;
-  /* border: 2px solid red; */
 }
 
 .user-list {
@@ -23,7 +22,6 @@
   align-items: center;
   width: 40vw;
   margin-top: 20px;
-  /* border: 2px solid blue; */
 }
 
 .user-data {
@@ -32,7 +30,6 @@
   justify-content: space-between;
   align-items: center;
   width: 40vw;
-  /* border: 2px solid green; */
 }
 
 .search {
@@ -41,39 +38,48 @@
   font-size: 17px;
 }
 
-/* body {
-  background-color: rgb(177, 177, 203)
-} */
+body {
+  background: lightpink;
+}
 
-/* nav {
+nav {
   display: flex;
-  background-color: #f43333;
+  height: 70px;
+  background-color: brown;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 
 .navlink {
   display: flex;
-  gap: 1.5rem;
-  padding: 10px;
-  align-items: center; */
-/* }
+  gap: 2rem;
+  /* padding: 20px; */
+  align-items: center;
+}
 
 .navlink a {
   text-decoration: none;
   color: white;
   font-weight: 500;
   font-size: 1.2rem;
-  font-family: 'Comfortaa', cursive;
-} */
+  font-family: "Comfortaa", cursive;
+  transition: 0.2s ease-in-out;
+  font-weight: 600;
+}
+.navlink .active a {
+  color: #ff7917;
+}
+.navlink a:hover {
+  color: #ff7917;
+}
 
-/* h1 {
-  font-family: 'Comfortaa', cursive;
+h1 {
+  font-family: "Comfortaa", cursive;
   margin-bottom: 50px;
 }
 
 .container {
-
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -86,25 +92,23 @@
   background-color: #f3f3f3;
   box-shadow: 1px 1px 1px 1px;
   border-radius: 10px;
-} */
+}
 
-/* .box {
-
+.box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
+}
 
-} */
-
-/* .name {
+.name {
   width: 20vw;
   height: 35px;
   font-size: 20px;
   border-radius: 5px;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   box-shadow: 1px 1px 1px 1px rgb(180, 159, 201);
   border: none;
   outline: none;
@@ -116,7 +120,7 @@
   font-size: 20px;
   border-radius: 5px;
   box-shadow: 1px 1px 1px 1px rgb(180, 159, 201);
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   border: none;
   outline: none;
 }
@@ -126,20 +130,18 @@
   height: 35px;
   font-size: 20px;
   border-radius: 5px;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   box-shadow: 1px 1px 1px 1px rgb(180, 159, 201);
-  ;
   border: none;
   outline: none;
-} */
+}
 
-/* .btn {
-  border: 2px solid red;
+.btn {
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 20vw;
-
 }
 
 button {
@@ -167,7 +169,7 @@ button {
   font-size: 20px;
   outline: none;
   border-radius: 5px;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   box-shadow: 1px 1px 1px 1px grey;
   border: none;
 }
@@ -178,4 +180,41 @@ button {
   position: relative;
   left: 150px;
   bottom: 25px;
-} */
+}
+.icons {
+  font-size: 25px;
+  color: white;
+}
+.sideNav {
+  flex-direction: column;
+  display: flex;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background-color: rgb(245, 100, 100);
+  align-items: center;
+  width: 225px;
+  height: calc(100vh - 70px);
+  gap: 2rem;
+  padding-top: 20px;
+  transition: 0.3s all ease;
+  z-index: -3;
+}
+.hidden {
+  right: -100%;
+}
+.sideNav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: "Comfortaa", cursive;
+  transition: 0.2s ease-in-out;
+  font-weight: 600;
+}
+.sideNav .active a {
+  color: blueviolet;
+}
+.sideNav a:hover {
+  color: #ff7917;
+}

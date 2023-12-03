@@ -11,6 +11,7 @@ const reducer = (state, action) => {
 
 const Home = ({ name, role }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  console.log(name);
   return (
     <>
       <div>
