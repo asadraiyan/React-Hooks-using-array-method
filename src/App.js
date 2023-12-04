@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.css";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import "./App.css";
 // import CompA from './components/CompA';
 // import Reactlifecyclemethod from './Reactlifecyclemethod';
 // import AgeCalculator from "./components/AgeCalculator";
@@ -14,10 +14,10 @@ import "./App.css";
 // import UseCallback from "./components/UseCallback";
 // // import Usememohook from "./components/Usememohook";
 // import Userefhook from "./components/Userefhook";
-import Home from "./components/Home";
-import Search from "./components/Search";
-import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
+// import Home from "./components/Home";
+// import Search from "./components/Search";
+// import Contact from "./components/Contact";
+// import Navbar from "./components/Navbar";
 // import HooksUseState from './components/HooksUseState';
 // import './components/Miniproject.css'
 // import Miniproject from './components/Miniproject';
@@ -30,55 +30,56 @@ import Navbar from "./components/Navbar";
 // import Axios from "./components/Axios";
 // import UseContext from "./components/ContextHook/UseContext";
 // import UseEffecthook from "./components/UseEffecthook";
+import MovieCard from "./components/NetflixMovies/MovieCard";
 
+// const name = "Asad Raiyan";
+// const role = "Web Developer";
 const App = () => {
-  const name = "Asad Raiyan";
-  const role = "Web Dev";
-  console.log(name);
-
   return (
     <>
-      <Router>
-        <Navbar />
-        <div>
-          <Routes>
-            <Route
+      {/* <Router> */}
+      {/* <Navbar /> */}
+      {/* <div> */}
+      {/* <Routes> */}
+      {/* <Route
               exact
               path="/"
-              element={<Home myName={name} myRole={role} />}
-            />
-            <Route exact path="/Search" element={<Search />} />
-            <Route exact path="/Contact" element={<Contact />} />
-            {/* <Practise img = "https://picsum.photos/400"/> */}
-            {/* <Miniproject/> */}
-            {/* <HooksUseState/> */}
-            {/* <UsestateObject /> */}
+              element={<Home name="Asad Raiyan" role="Web Developer" />}
+            /> */}
+      {/* <Route exact path="/Search" element={<Search />} />
+            <Route exact path="/Contact" element={<Contact />} /> */}
+      {/* <Practise img = "https://picsum.photos/400"/> */}
+      {/* <Miniproject/> */}
+      {/* <HooksUseState/> */}
+      {/* <UsestateObject /> */}
 
-            {/* <CompA /> */}
-            {/* <Reactlifecyclemethod /> */}
-            {/* <Userefhook /> */}
-            {/* <UseEffecthook /> */}
-            {/* <Usememohook /> */}
-            {/* <UseCallback /> */}
-            {/* <UseContext /> */}
-            {/* <Counter /> */}
-            {/* <NoteApp /> */}
-            {/* <LandingPage /> */}
-            {/* <InputForm /> */}
-            {/* <Axios /> */}
-            {/* <Inputdisplay /> */}
-            {/* <QuoteGen /> */}
-            {/* <Assignment /> */}
-            {/* <Table /> */}
-            {/* <AgeCalculator /> */}
-            {/* <CodingChallenge /> */}
-            {/* <PasswordGen /> */}
-            {/* <LifecycleMethod /> */}
-            {/* <Debouncing /> */}
-          </Routes>
-        </div>
-      </Router>
+      {/* <CompA /> */}
+      {/* <Reactlifecyclemethod /> */}
+      {/* <Userefhook /> */}
+      {/* <UseEffecthook /> */}
+      {/* <Usememohook /> */}
+      {/* <UseCallback /> */}
+      {/* <UseContext /> */}
+      {/* <Counter /> */}
+      {/* <NoteApp /> */}
+      {/* <LandingPage /> */}
+      {/* <InputForm /> */}
+      {/* <Axios /> */}
+      {/* <Inputdisplay /> */}
+      {/* <QuoteGen /> */}
+      {/* <Assignment /> */}
+      {/* <Table /> */}
+      {/* <AgeCalculator /> */}
+      {/* <CodingChallenge /> */}
+      {/* <PasswordGen /> */}
+      {/* <LifecycleMethod /> */}
+      {/* <Debouncing /> */}
+      <MovieCard />
+      {/* </Routes> */}
+      {/* </div> */}
+      {/* </Router> */}
     </>
   );
 };
 export default App;
+// export { name, role };
