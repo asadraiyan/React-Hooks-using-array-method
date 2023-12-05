@@ -8,8 +8,9 @@
 // import LifecycleMethod from "./components/LifecycleMethod";
 // import PasswordGen from "./components/PasswordGen";
 // import Table from "./components/Table";
-// import Counter from "./components/Counter"
+import Counter from "./components/Counter";
 // import Inputdisplay from "./components/Inputdisplay";
+// import Todofy from "./components/Todofy";
 // import QuoteGen from "./components/QuoteGen"
 // import UseCallback from "./components/UseCallback";
 // // import Usememohook from "./components/Usememohook";
@@ -30,7 +31,7 @@
 // import Axios from "./components/Axios";
 // import UseContext from "./components/ContextHook/UseContext";
 // import UseEffecthook from "./components/UseEffecthook";
-import MovieCard from "./components/NetflixMovies/MovieCard";
+// import MovieCard from "./components/NetflixMovies/MovieCard";
 
 // const name = "Asad Raiyan";
 // const role = "Web Developer";
@@ -52,7 +53,6 @@ const App = () => {
       {/* <Miniproject/> */}
       {/* <HooksUseState/> */}
       {/* <UsestateObject /> */}
-
       {/* <CompA /> */}
       {/* <Reactlifecyclemethod /> */}
       {/* <Userefhook /> */}
@@ -60,7 +60,8 @@ const App = () => {
       {/* <Usememohook /> */}
       {/* <UseCallback /> */}
       {/* <UseContext /> */}
-      {/* <Counter /> */}
+      <Counter />
+      {/* <Todofy /> */}
       {/* <NoteApp /> */}
       {/* <LandingPage /> */}
       {/* <InputForm /> */}
@@ -74,7 +75,7 @@ const App = () => {
       {/* <PasswordGen /> */}
       {/* <LifecycleMethod /> */}
       {/* <Debouncing /> */}
-      <MovieCard />
+      {/* <MovieCard /> */}
       {/* </Routes> */}
       {/* </div> */}
       {/* </Router> */}

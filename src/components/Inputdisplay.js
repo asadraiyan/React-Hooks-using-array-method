@@ -13,6 +13,7 @@ const Inputdisplay = () => {
       return;
     }
     setItem((oldItem) => {
+      console.log(oldItem);
       return [...oldItem, input];
     });
     setInput("");
@@ -54,8 +55,9 @@ const Inputdisplay = () => {
                 <div
                   className="item-container"
                   style={{ display: "flex", flexDirection: "row" }}
+                  key={id}
                 >
-                  <li>{curValue}</li>
+                  <li key={id}>{curValue}</li>
                   <button
                     style={{ marginLeft: "10px", marginTop: "5px" }}
                     onClick={() => deleteHandler(id)}
