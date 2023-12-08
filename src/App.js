@@ -8,9 +8,9 @@
 // import LifecycleMethod from "./components/LifecycleMethod";
 // import PasswordGen from "./components/PasswordGen";
 // import Table from "./components/Table";
-import Counter from "./components/Counter";
+// import Counter from "./components/Counter";
 // import Inputdisplay from "./components/Inputdisplay";
-// import Todofy from "./components/Todofy";
+import Todofy from "./components/Todofy";
 // import QuoteGen from "./components/QuoteGen"
 // import UseCallback from "./components/UseCallback";
 // // import Usememohook from "./components/Usememohook";
@@ -60,8 +60,8 @@ const App = () => {
       {/* <Usememohook /> */}
       {/* <UseCallback /> */}
       {/* <UseContext /> */}
-      <Counter />
-      {/* <Todofy /> */}
+      {/* <Counter /> */}
+      <Todofy />
       {/* <NoteApp /> */}
       {/* <LandingPage /> */}
       {/* <InputForm /> */}

@@ -1,8 +1,13 @@
 import React, { useState } from "react";
-
+import "./todofy.css";
+import { RiArrowDropDownLine } from "react-icons/ri";
 const Todofy = () => {
   const [todo, setTodo] = useState([]);
   const [input, setInput] = useState("");
+  const [isActive, setIsActive] = useState(false);
+  const [show, setShow] = useState(false);
+  const [selected, setSelected] = useState("Choose One");
+  const options = ["Facebook", "Instagram", "Whatsapp", "Twitter", "Linkedin"];
 
   const handleChange = (e) => {
     setInput(e.target.value);
@@ -18,6 +23,13 @@ const Todofy = () => {
     setInput("");
   };
 
+  // useEffect(() => {
+  //   console.log("clicked");
+  //   return () => {
+  //     console.log("unmount");
+  //   };
+  // }, [todo]);
+
   const handleDelete = (id) => {
     setTodo((oldItems) => {
       return oldItems.filter((curItem, index) => {
@@ -25,6 +37,7 @@ const Todofy = () => {
       });
     });
   };
+
   return (
     <>
       <div>
@@ -53,6 +66,46 @@ const Todofy = () => {
             );
           })}
         </ol>
+        <div className="dropdown-container">
+          <div className="custom-dropdown">
+            <button
+              className="dropdown-button"
+              onClick={() => {
+                setIsActive(!isActive);
+              }}
+            >
+              {selected}
+            </button>
+            <RiArrowDropDownLine
+              className="icon"
+              onClick={() => {
+                setIsActive(!isActive);
+              }}
+              style={{
+                transform: `rotate(${!isActive ? 0 : 180}deg)`,
+                transition: "all 0.25s",
+              }}
+            />
+            {isActive && (
+              <div className="dropdown-content" id="dropdownContent">
+                {options.map((option) => {
+                  return (
+                    <button
+                      onClick={(e) => {
+                        setSelected(e.target.textContent);
+                        setIsActive(false);
+                        setShow(!show);
+                      }}
+                    >
+                      {option}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        </div>
+        {show && <p>The choosen social media app is {selected}</p>}
       </div>
     </>
   );
