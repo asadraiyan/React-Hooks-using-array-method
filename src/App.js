@@ -10,7 +10,7 @@
 // import Table from "./components/Table";
 // import Counter from "./components/Counter";
 // import Inputdisplay from "./components/Inputdisplay";
-import Todofy from "./components/Todofy";
+// import Todofy from "./components/Todofy";
 // import QuoteGen from "./components/QuoteGen"
 // import UseCallback from "./components/UseCallback";
 // // import Usememohook from "./components/Usememohook";
@@ -26,7 +26,7 @@ import Todofy from "./components/Todofy";
 // import UsestateObject from './components/UsestateObject';
 // import Assignment from "./components/Assignment"
 // import LandingPage from "./LandingPage"
-// import InputForm from "./components/InputForm";
+import InputForm from "./components/InputForm";
 // import NoteApp from "./components/NoteApp"
 // import Axios from "./components/Axios";
 // import UseContext from "./components/ContextHook/UseContext";
@@ -61,10 +61,10 @@ const App = () => {
       {/* <UseCallback /> */}
       {/* <UseContext /> */}
       {/* <Counter /> */}
-      <Todofy />
+      {/* <Todofy /> */}
       {/* <NoteApp /> */}
       {/* <LandingPage /> */}
-      {/* <InputForm /> */}
+      <InputForm />
       {/* <Axios /> */}
       {/* <Inputdisplay /> */}
       {/* <QuoteGen /> */}

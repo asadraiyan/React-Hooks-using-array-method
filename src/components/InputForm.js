@@ -14,7 +14,6 @@ const InputForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setErrorMessage(validate(formData));
-    setFormData("");
   };
 
   const handleChange = (e) => {
@@ -29,31 +28,36 @@ const InputForm = () => {
 
   const validate = (values) => {
     let errors = {};
-    let strongPassword = new RegExp(
-      "(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})"
-    );
+    let strongPassword = new RegExp("^(?=.*[A-Za-z])(?=.*d)[A-Za-zd]{8,}$");
     if (values.userName === "") {
       errors.userName = "Username is required";
-    } else if (values.userName.length > 15 || values.userName.length < 3) {
+      return errors;
+    }
+    if (values.userName?.length > 15 || values.userName?.length <= 3) {
       errors.userName =
         "Username must have atleast 3 characters and cannot exceed more than 15 characters";
+      return errors;
     }
     if (values.email === "") {
       errors.email = "Email is required";
+      return errors;
     }
     if (values.phoneNumber === "") {
       errors.phoneNumber = "Phone number is required";
+      return errors;
     }
     if (values.password === "") {
       errors.password = "Password is required";
-    } else if (!strongPassword?.test(values.password)) {
-      errors.password =
-        "Must have minimum eight characters, at least one uppercase letter, one lowercase letter and one number";
-    } else {
-      setSubmit(true);
+      return errors;
     }
-    // console.log(errors)
-    return errors;
+    // if (!strongPassword.test(values.password)) {
+    //   errors.password =
+    //     "Must have minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character";
+    //   return errors;
+    // }
+    setFormData("");
+    setErrorMessage({});
+    setSubmit(true);
   };
   console.log("errorMessage", errorMessage);
   return (
@@ -72,7 +76,7 @@ const InputForm = () => {
         <label>User name</label>
         <input
           type="text"
-          value={formData.userName}
+          value={formData.userName || ""}
           name="userName"
           onChange={handleChange}
         />
@@ -80,7 +84,7 @@ const InputForm = () => {
         <label>E-mail</label>
         <input
           type="email"
-          value={formData.email}
+          value={formData.email || ""}
           name="email"
           onChange={handleChange}
         />
@@ -88,7 +92,7 @@ const InputForm = () => {
         <label>Phone number</label>
         <input
           type="text"
-          value={formData.phoneNumber}
+          value={formData.phoneNumber || ""}
           name="phoneNumber"
           onChange={handleChange}
         />
@@ -96,13 +100,13 @@ const InputForm = () => {
         <label>Password</label>
         <input
           type="password"
-          value={formData.password}
+          value={formData.password || ""}
           name="password"
           onChange={handleChange}
         />
         <span>{errorMessage?.password}</span>
         <button style={{ width: "100px", marginTop: "10px" }}>Submit</button>
-        {submit && <h3>Success</h3>}
+        {submit && <h3>Form is submitted successfully</h3>}
       </form>
     </>
   );
