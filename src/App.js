@@ -3,7 +3,7 @@
 // import CompA from './components/CompA';
 // import Reactlifecyclemethod from './Reactlifecyclemethod';
 // import AgeCalculator from "./components/AgeCalculator";
-// import CodingChallenge from "./components/CodingChallenge";
+import CodingChallenge from "./components/CodingChallenge";
 // import Debouncing from "./components/Debouncing";
 // import LifecycleMethod from "./components/LifecycleMethod";
 // import PasswordGen from "./components/PasswordGen";
@@ -26,7 +26,7 @@
 // import UsestateObject from './components/UsestateObject';
 // import Assignment from "./components/Assignment"
 // import LandingPage from "./LandingPage"
-import InputForm from "./components/InputForm";
+// import InputForm from "./components/InputForm";
 // import NoteApp from "./components/NoteApp"
 // import Axios from "./components/Axios";
 // import UseContext from "./components/ContextHook/UseContext";
@@ -64,14 +64,14 @@ const App = () => {
       {/* <Todofy /> */}
       {/* <NoteApp /> */}
       {/* <LandingPage /> */}
-      <InputForm />
+      {/* <InputForm /> */}
       {/* <Axios /> */}
       {/* <Inputdisplay /> */}
       {/* <QuoteGen /> */}
       {/* <Assignment /> */}
       {/* <Table /> */}
       {/* <AgeCalculator /> */}
-      {/* <CodingChallenge /> */}
+      <CodingChallenge />
       {/* <PasswordGen /> */}
       {/* <LifecycleMethod /> */}
       {/* <Debouncing /> */}

@@ -28,7 +28,7 @@ const InputForm = () => {
 
   const validate = (values) => {
     let errors = {};
-    let strongPassword = new RegExp("^(?=.*[A-Za-z])(?=.*d)[A-Za-zd]{8,}$");
+    // let strongPassword = new RegExp("^(?=.*[A-Za-z])(?=.*d)[A-Za-zd]{8,}$");
     if (values.userName === "") {
       errors.userName = "Username is required";
       return errors;

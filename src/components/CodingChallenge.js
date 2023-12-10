@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ChildComp from "./ChildComp";
 
 const CodingChallenge = () => {
@@ -6,6 +6,8 @@ const CodingChallenge = () => {
   const [input, setInput] = useState("");
   const [inputFiled, setInputField] = useState("");
   const [item, setItem] = useState([]);
+  const [count, setCount] = useState(0);
+  const [timer, setTimer] = useState(10);
   const [update, setUpdate] = useState(
     "I need to be updated from my below child"
   );
@@ -32,6 +34,17 @@ const CodingChallenge = () => {
   const updatedText = () => {
     setUpdate("updated from the child component");
   };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTimer((prevTimer) => (prevTimer > 0 ? prevTimer - 1 : 0));
+    }, 1000);
+
+    // Clean up the interval on component unmount
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
 
   return (
     <>
@@ -69,6 +82,35 @@ const CodingChallenge = () => {
         <p>{update}</p>
       </div>
       <ChildComp updatedText={updatedText} />
+      <hr />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          marginBottom: "1rem",
+        }}
+      >
+        <h2>No. of clicks untill timer expires</h2>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            // height: "100px",
+            width: "300px",
+            backgroundColor: "#f3a469",
+            justifyContent: "space-around",
+          }}
+        >
+          <h3>{count}</h3>
+          <h3>Time Left: {timer} seconds</h3>
+          {timer !== 0 ? (
+            <button onClick={() => setCount(count + 1)}>Click</button>
+          ) : null}
+          {timer === 0 ? <h3>No. of clicks attempt: {count}</h3> : ""}
+        </div>
+      </div>
     </>
   );
 };
