@@ -1,6 +1,8 @@
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import StopWatch from "./components/StopWatch";
+import Counter1 from "./components/CustomHook/Counter1";
+import Counter2 from "./components/CustomHook/Counter2";
+// import StopWatch from "./components/StopWatch";
 // import CompA from './components/CompA';
 // import Reactlifecyclemethod from './Reactlifecyclemethod';
 // import AgeCalculator from "./components/AgeCalculator";
@@ -73,7 +75,9 @@ const App = () => {
       {/* <Table /> */}
       {/* <AgeCalculator /> */}
       {/* <CodingChallenge /> */}
-      <StopWatch />
+      {/* <StopWatch /> */}
+      <Counter1 />
+      <Counter2 />
       {/* <PasswordGen /> */}
       {/* <LifecycleMethod /> */}
       {/* <Debouncing /> */}
