@@ -1,9 +1,10 @@
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// import "./App.css";
+import "./App.css";
+import StopWatch from "./components/StopWatch";
 // import CompA from './components/CompA';
 // import Reactlifecyclemethod from './Reactlifecyclemethod';
 // import AgeCalculator from "./components/AgeCalculator";
-import CodingChallenge from "./components/CodingChallenge";
+// import CodingChallenge from "./components/CodingChallenge";
 // import Debouncing from "./components/Debouncing";
 // import LifecycleMethod from "./components/LifecycleMethod";
 // import PasswordGen from "./components/PasswordGen";
@@ -71,7 +72,8 @@ const App = () => {
       {/* <Assignment /> */}
       {/* <Table /> */}
       {/* <AgeCalculator /> */}
-      <CodingChallenge />
+      {/* <CodingChallenge /> */}
+      <StopWatch />
       {/* <PasswordGen /> */}
       {/* <LifecycleMethod /> */}
       {/* <Debouncing /> */}
