@@ -13,6 +13,7 @@ const Counter1 = () => {
           padding: "1rem",
         }}
       >
+        <h1>Custom Hook</h1>
         <h2>Counter1: {count}</h2>
         <div
           style={{
