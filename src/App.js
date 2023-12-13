@@ -1,6 +1,6 @@
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import "./App.css";
-import CryptoGallery from "./components/Crypto/CryptoGallery";
+// import CryptoGallery from "./components/Crypto/CryptoGallery";
 // import Counter1 from "./components/CustomHook/Counter1";
 // import Counter2 from "./components/CustomHook/Counter2";
 // import StopWatch from "./components/StopWatch";
@@ -36,6 +36,7 @@ import CryptoGallery from "./components/Crypto/CryptoGallery";
 // import UseContext from "./components/ContextHook/UseContext";
 // import UseEffecthook from "./components/UseEffecthook";
 // import MovieCard from "./components/NetflixMovies/MovieCard";
+import ImageSlider from "./components/ImageSlider/ImageSlider";
 
 // const name = "Asad Raiyan";
 // const role = "Web Developer";
@@ -79,7 +80,8 @@ const App = () => {
       {/* <StopWatch /> */}
       {/* <Counter1 />
       <Counter2 /> */}
-      <CryptoGallery />
+      {/* <CryptoGallery /> */}
+      <ImageSlider />
       {/* <PasswordGen /> */}
       {/* <LifecycleMethod /> */}
       {/* <Debouncing /> */}
