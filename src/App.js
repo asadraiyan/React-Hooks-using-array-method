@@ -36,7 +36,9 @@
 // import UseContext from "./components/ContextHook/UseContext";
 // import UseEffecthook from "./components/UseEffecthook";
 // import MovieCard from "./components/NetflixMovies/MovieCard";
-import ImageSlider from "./components/ImageSlider/ImageSlider";
+// import ImageSlider from "./components/ImageSlider/ImageSlider";
+
+import AppData from "./components/CRUD/AppData";
 
 // const name = "Asad Raiyan";
 // const role = "Web Developer";
@@ -81,7 +83,8 @@ const App = () => {
       {/* <Counter1 />
       <Counter2 /> */}
       {/* <CryptoGallery /> */}
-      <ImageSlider />
+      {/* <ImageSlider /> */}
+      <AppData />
       {/* <PasswordGen /> */}
       {/* <LifecycleMethod /> */}
       {/* <Debouncing /> */}
