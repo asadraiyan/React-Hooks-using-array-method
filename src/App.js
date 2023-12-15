@@ -40,6 +40,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import AppData from "./components/CRUD/AppData";
 import Create from "./components/CRUD/Create";
+import Update from "./components/CRUD/Update";
 
 // const name = "Asad Raiyan";
 // const role = "Web Developer";
@@ -56,7 +57,8 @@ const App = () => {
               element={<Home name="Asad Raiyan" role="Web Developer" />}
             /> */}
             <Route exact path="/" element={<AppData />} />
-            <Route exact path="/create" element={<Create />} />
+            <Route path="/create" element={<Create />} />
+            <Route path="/update/:id" element={<Update />} />
             {/* <Route exact path="/Contact" element={<Contact />} /> */}
             {/* <Practise img = "https://picsum.photos/400"/> */}
             {/* <Miniproject/> */}

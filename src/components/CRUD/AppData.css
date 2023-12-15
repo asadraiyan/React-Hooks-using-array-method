@@ -71,8 +71,18 @@ body {
   align-items: center;
   gap: 1rem;
 }
-.eddel button {
-  background-color: #009879;
+.edit-btn {
+  background-color: rgb(5, 152, 5);
+  color: white;
+  padding: 10px 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.dlt-btn {
+  background-color: orangered;
   color: white;
   padding: 10px 20px;
   font-size: 17px;

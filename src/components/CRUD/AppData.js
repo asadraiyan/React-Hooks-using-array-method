@@ -1,17 +1,36 @@
 import React, { useEffect, useState } from "react";
 import "./AppData.css";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const AppData = () => {
   const [userData, setUserData] = useState([]);
   const [heading, setHeading] = useState([]);
+
+  const navigate = useNavigate();
   useEffect(() => {
     axios.get("http://localhost:3030/users").then((res) => {
       setHeading(Object.keys(res.data[0]));
       setUserData(res.data);
     });
   }, []);
+
+  const handleDelete = (id) => {
+    const confirm = window.confirm("Do you want to delete this?");
+    if (confirm) {
+      axios
+        .delete(`http://localhost:3030/users/${id}`)
+        .then((res) => {
+          alert("Record has been deleted");
+          const updatedRecords = heading.filter((data) => {
+            return data.id !== id;
+          });
+          setHeading(updatedRecords);
+          navigate("/");
+        })
+        .catch((err) => console.log(err));
+    }
+  };
   return (
     <>
       <div className="container">
@@ -39,8 +58,15 @@ const AppData = () => {
                   <td>{record.email}</td>
                   <td>{record.phone}</td>
                   <td className="eddel">
-                    <button>Edit</button>
-                    <button>Delete</button>
+                    <Link to={`/update/${record.id}`}>
+                      <button className="edit-btn">Edit</button>
+                    </Link>
+                    <button
+                      onClick={() => handleDelete(record.id)}
+                      className="dlt-btn"
+                    >
+                      Delete
+                    </button>
                   </td>
                 </tr>
               );
