@@ -46,7 +46,7 @@ const AppData = () => {
               {heading.map((head, index) => {
                 return <th key={index}>{head.toUpperCase()}</th>;
               })}
-              <th>Actions</th>
+              <th>ACTIONS</th>
             </tr>
           </thead>
           <tbody>

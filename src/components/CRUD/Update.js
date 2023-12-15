@@ -26,7 +26,7 @@ const Update = () => {
 
   const handleUpdate = (e) => {
     e.preventDefault();
-    axios.put("http://localhost:3030/users/" + id, formData).then((res) => {
+    axios.put(`http://localhost:3030/users/${id}`, formData).then((res) => {
       alert("Data is updated succesfully");
       navigate("/");
     });
