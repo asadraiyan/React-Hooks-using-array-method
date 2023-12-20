@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import "./App.css";
 // import CryptoGallery from "./components/Crypto/CryptoGallery";
 // import Counter1 from "./components/CustomHook/Counter1";
@@ -37,64 +37,65 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import UseEffecthook from "./components/UseEffecthook";
 // import MovieCard from "./components/NetflixMovies/MovieCard";
 // import ImageSlider from "./components/ImageSlider/ImageSlider";
-
-import AppData from "./components/CRUD/AppData";
-import Create from "./components/CRUD/Create";
-import Update from "./components/CRUD/Update";
+import Accordion from "./components/Accordion";
+// import AppData from "./components/CRUD/AppData";
+// import Create from "./components/CRUD/Create";
+// import Update from "./components/CRUD/Update";
 
 // const name = "Asad Raiyan";
 // const role = "Web Developer";
 const App = () => {
   return (
     <>
-      <Router>
-        {/* <Navbar /> */}
-        <div>
-          <Routes>
-            {/* <Route
+      {/* <Router> */}
+      {/* <Navbar /> */}
+      {/* <div> */}
+      {/* <Routes> */}
+      {/* <Route
               exact
               path="/"
               element={<Home name="Asad Raiyan" role="Web Developer" />}
             /> */}
-            <Route exact path="/" element={<AppData />} />
+      {/* <Route exact path="/" element={<AppData />} />
             <Route path="/create" element={<Create />} />
-            <Route path="/update/:id" element={<Update />} />
-            {/* <Route exact path="/Contact" element={<Contact />} /> */}
-            {/* <Practise img = "https://picsum.photos/400"/> */}
-            {/* <Miniproject/> */}
-            {/* <HooksUseState/> */}
-            {/* <UsestateObject /> */}
-            {/* <CompA /> */}
-            {/* <Reactlifecyclemethod /> */}
-            {/* <Userefhook /> */}
-            {/* <UseEffecthook /> */}
-            {/* <Usememohook /> */}
-            {/* <UseCallback /> */}
-            {/* <UseContext /> */}
-            {/* <Counter /> */}
-            {/* <Todofy /> */}
-            {/* <NoteApp /> */}
-            {/* <LandingPage /> */}
-            {/* <InputForm /> */}
-            {/* <Axios /> */}
-            {/* <Inputdisplay /> */}
-            {/* <QuoteGen /> */}
-            {/* <Assignment /> */}
-            {/* <Table /> */}
-            {/* <AgeCalculator /> */}
-            {/* <CodingChallenge /> */}
-            {/* <StopWatch /> */}
-            {/* {/* <Counter1 /> */}
-            {/* <Counter2 /> */}
-            {/* <CryptoGallery /> */}
-            {/* <ImageSlider /> */}
-            {/* <PasswordGen /> */}
-            {/* <LifecycleMethod /> */}
-            {/* <Debouncing /> */}
-            {/* <MovieCard /> */}
-          </Routes>
-        </div>
-      </Router>
+            <Route path="/update/:id" element={<Update />} /> */}
+      {/* <Route exact path="/Contact" element={<Contact />} /> */}
+      {/* <Practise img = "https://picsum.photos/400"/> */}
+      {/* <Miniproject/> */}
+      {/* <HooksUseState/> */}
+      {/* <UsestateObject /> */}
+      {/* <CompA /> */}
+      {/* <Reactlifecyclemethod /> */}
+      {/* <Userefhook /> */}
+      {/* <UseEffecthook /> */}
+      {/* <Usememohook /> */}
+      {/* <UseCallback /> */}
+      {/* <UseContext /> */}
+      {/* <Counter /> */}
+      {/* <Todofy /> */}
+      {/* <NoteApp /> */}
+      {/* <LandingPage /> */}
+      {/* <InputForm /> */}
+      {/* <Axios /> */}
+      {/* <Inputdisplay /> */}
+      {/* <QuoteGen /> */}
+      {/* <Assignment /> */}
+      <Accordion />
+      {/* <Table /> */}
+      {/* <AgeCalculator /> */}
+      {/* <CodingChallenge /> */}
+      {/* <StopWatch /> */}
+      {/* {/* <Counter1 /> */}
+      {/* <Counter2 /> */}
+      {/* <CryptoGallery /> */}
+      {/* <ImageSlider /> */}
+      {/* <PasswordGen /> */}
+      {/* <LifecycleMethod /> */}
+      {/* <Debouncing /> */}
+      {/* <MovieCard /> */}
+      {/* </Routes> */}
+      {/* </div>
+      </Router> */}
     </>
   );
 };
