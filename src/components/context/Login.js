@@ -9,6 +9,10 @@ const Login = () => {
   const { setUser } = useContext(userContext);
 
   const handleSubmit = (e) => {
+    if (userName === "" || password === "") {
+      alert("Plese enter the details");
+      return;
+    }
     e.preventDefault();
     setUser({ userName, password });
   };

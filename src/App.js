@@ -1,5 +1,5 @@
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// import "./App.css";
+import "./App.css";
 // import CryptoGallery from "./components/Crypto/CryptoGallery";
 // import Counter1 from "./components/CustomHook/Counter1";
 // import Counter2 from "./components/CustomHook/Counter2";
@@ -41,7 +41,9 @@
 // import AppData from "./components/CRUD/AppData";
 // import Create from "./components/CRUD/Create";
 // import Update from "./components/CRUD/Update";
-import UserContextProvider from "./components/context/UserContextProvider";
+// import UserContextProvider from "./components/context/UserContextProvider";
+// import MyEditor from "./components/MyEditor";
+import { PasswordHideShow } from "./components/PasswordHideShow";
 
 // const name = "Asad Raiyan";
 // const role = "Web Developer";
@@ -82,7 +84,9 @@ const App = () => {
       {/* <QuoteGen /> */}
       {/* <Assignment /> */}
       {/* <Accordion /> */}
-      <UserContextProvider />
+      {/* <UserContextProvider /> */}
+      {/* <MyEditor /> */}
+      <PasswordHideShow />
       {/* <Table /> */}
       {/* <AgeCalculator /> */}
       {/* <CodingChallenge /> */}
