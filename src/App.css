@@ -290,3 +290,26 @@ button {
   height: 250px;
   object-fit: cover;
 }
+.pages {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.pages button {
+  background-color: rgb(48, 115, 239);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 3px;
+  font-size: 17px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.pages button.active {
+  background-color: orangered;
+}

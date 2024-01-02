@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 
 const Pagination = () => {
   const [productData, setProductData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(10);
   const fetchProducts = async () => {
     const response = await fetch("https://dummyjson.com/products?limit=100");
     const result = await response.json();
@@ -11,6 +13,17 @@ const Pagination = () => {
   useEffect(() => {
     fetchProducts();
   }, []);
+
+  const lastPostIndex = currentPage * postsPerPage;
+  console.log("lastPostIndex=", lastPostIndex);
+  const firstPostIndex = lastPostIndex - postsPerPage;
+  console.log("firstPostIndex=", firstPostIndex);
+  const currentPosts = productData.slice(firstPostIndex, lastPostIndex);
+
+  let pages = [];
+  for (let i = 1; i <= Math.ceil(productData.length / postsPerPage); i++) {
+    pages.push(i);
+  }
   return (
     <>
       <div>
@@ -18,14 +31,27 @@ const Pagination = () => {
           List of Products
         </h1>
         <div className="product_container">
-          {productData.map((item) => {
+          {currentPosts.map((item, index) => {
             return (
               <>
-                <div className="product_box" key={item.id}>
+                <div className="product_box" key={index}>
                   <img src={item.thumbnail} alt={item.thumbnail} />
                   <h3>{item.title.substring(0, 10)}...</h3>
                 </div>
               </>
+            );
+          })}
+        </div>
+        <div className="pages">
+          {pages.map((page, index) => {
+            return (
+              <button
+                className={page === currentPage ? "active " : ""}
+                key={index}
+                onClick={() => setCurrentPage(page)}
+              >
+                {page}
+              </button>
             );
           })}
         </div>
