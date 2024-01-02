@@ -237,7 +237,7 @@ button {
   background-color: orangered;
   transition: 1.5s ease 0.3s;
 } */
-.password-container {
+/* .password-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -263,4 +263,30 @@ button {
   top: 5.5px;
   font-size: 20px;
   cursor: pointer;
+} */
+
+.product_container {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.product_box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  background: rgb(231, 231, 231);
+  border-radius: 5px;
+  gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+}
+.product_box img {
+  width: 275px;
+  height: 250px;
+  object-fit: cover;
 }

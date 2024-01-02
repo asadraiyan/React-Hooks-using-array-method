@@ -43,7 +43,8 @@ import "./App.css";
 // import Update from "./components/CRUD/Update";
 // import UserContextProvider from "./components/context/UserContextProvider";
 // import MyEditor from "./components/MyEditor";
-import { PasswordHideShow } from "./components/PasswordHideShow";
+// import { PasswordHideShow } from "./components/PasswordHideShow";
+import Pagination from "./components/Pagination";
 
 // const name = "Asad Raiyan";
 // const role = "Web Developer";
@@ -86,7 +87,7 @@ const App = () => {
       {/* <Accordion /> */}
       {/* <UserContextProvider /> */}
       {/* <MyEditor /> */}
-      <PasswordHideShow />
+      {/* <PasswordHideShow /> */}
       {/* <Table /> */}
       {/* <AgeCalculator /> */}
       {/* <CodingChallenge /> */}
@@ -94,6 +95,7 @@ const App = () => {
       {/* {/* <Counter1 /> */}
       {/* <Counter2 /> */}
       {/* <CryptoGallery /> */}
+      <Pagination />
       {/* <ImageSlider /> */}
       {/* <PasswordGen /> */}
       {/* <LifecycleMethod /> */}
