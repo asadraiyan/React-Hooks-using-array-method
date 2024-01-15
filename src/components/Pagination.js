@@ -19,6 +19,14 @@ const Pagination = () => {
       fetchProducts();
     };
   }, []);
+  const handleInputChange = (e) => {
+    setInput(e.target.value);
+    setLoader(true);
+    setTimeout(() => {
+      fetchProducts();
+      setLoader(false);
+    }, 200);
+  };
 
   const lastPostIndex = currentPage * postsPerPage;
   console.log("lastPostIndex=", lastPostIndex);
@@ -40,11 +48,12 @@ const Pagination = () => {
           <input
             type="text"
             placeholder="Search the product..."
-            onChange={(e) => setInput(e.target.value)}
+            onChange={handleInputChange}
             value={input || ""}
           />
         </div>
-        {loader && <Loader />}
+        <div className="loader_div">{loader && <Loader />} </div>
+
         <div className="product_container">
           {currentPosts
             .filter((item) => {
