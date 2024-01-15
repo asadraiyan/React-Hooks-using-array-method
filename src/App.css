@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* 
 .user {
   display: flex;
@@ -272,7 +273,7 @@ button {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 .product_box {
   display: flex;
@@ -284,6 +285,7 @@ button {
   gap: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 20px;
+  color: black;
 }
 .product_box img {
   width: 275px;
@@ -312,4 +314,21 @@ button {
 }
 .pages button.active {
   background-color: orangered;
+}
+.search_box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  margin-top: 2rem;
+}
+.search_box input {
+  width: 500px;
+  height: 40px;
+  outline: none;
+  font-size: 17px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px 2px rgb(151, 150, 150);
 }

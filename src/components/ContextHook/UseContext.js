@@ -9,7 +9,7 @@ const UseContext = () => {
       <context.Provider value={{ name: "Asad Raiyan", role: "Web developer" }}>
         <h1>useContext Hook</h1>
         <CompX />
-        <CompY />
+        {/* <CompY /> */}
       </context.Provider>
     </div>
   );
