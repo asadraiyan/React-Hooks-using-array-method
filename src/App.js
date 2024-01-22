@@ -1,5 +1,5 @@
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.css";
+// import "./App.css";
 // import CryptoGallery from "./components/Crypto/CryptoGallery";
 // import Counter1 from "./components/CustomHook/Counter1";
 // import Counter2 from "./components/CustomHook/Counter2";
@@ -37,14 +37,14 @@ import "./App.css";
 // import UseEffecthook from "./components/UseEffecthook";
 // import MovieCard from "./components/NetflixMovies/MovieCard";
 // import ImageSlider from "./components/ImageSlider/ImageSlider";
-// import Accordion from "./components/Accordion";
+import Accordion from "./components/accordion/Accordion";
 // import AppData from "./components/CRUD/AppData";
 // import Create from "./components/CRUD/Create";
 // import Update from "./components/CRUD/Update";
 // import UserContextProvider from "./components/context/UserContextProvider";
 // import MyEditor from "./components/MyEditor";
 // import { PasswordHideShow } from "./components/PasswordHideShow";
-import Pagination from "./components/Pagination";
+// import Pagination from "./components/Pagination";
 
 // const name = "Asad Raiyan";
 // const role = "Web Developer";
@@ -84,7 +84,7 @@ const App = () => {
       {/* <Inputdisplay /> */}
       {/* <QuoteGen /> */}
       {/* <Assignment /> */}
-      {/* <Accordion /> */}
+      <Accordion />
       {/* <UserContextProvider /> */}
       {/* <MyEditor /> */}
       {/* <PasswordHideShow /> */}
@@ -95,7 +95,7 @@ const App = () => {
       {/* {/* <Counter1 /> */}
       {/* <Counter2 /> */}
       {/* <CryptoGallery /> */}
-      <Pagination />
+      {/* <Pagination /> */}
       {/* <ImageSlider /> */}
       {/* <PasswordGen /> */}
       {/* <LifecycleMethod /> */}

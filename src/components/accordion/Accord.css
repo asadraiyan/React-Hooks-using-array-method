@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 50%;
+  /* height: 500px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgb(175, 173, 173);
+  padding: 3rem;
+}
+.heading {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+  align-items: center;
+}
+.heading h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.accordion_wrapper {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid blue; */
+  margin-top: 2rem;
+  overflow-y: scroll;
+  height: 500px;
+}
+.accordion_block {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.03);
+}
+.accord_box {
+  display: flex;
+  /* border: 2px solid yellow; */
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  padding: 10px;
+}
+.content {
+  margin-top: 5px;
+  display: flex;
+  border-radius: 5px;
+  background-color: rgb(246, 224, 224);
+  padding: 10px;
+}
