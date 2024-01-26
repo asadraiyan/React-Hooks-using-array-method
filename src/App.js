@@ -37,7 +37,8 @@
 // import UseEffecthook from "./components/UseEffecthook";
 // import MovieCard from "./components/NetflixMovies/MovieCard";
 // import ImageSlider from "./components/ImageSlider/ImageSlider";
-import Accordion from "./components/accordion/Accordion";
+import FileUploader from "./components/FileUploader";
+// import Accordion from "./components/accordion/Accordion";
 // import AppData from "./components/CRUD/AppData";
 // import Create from "./components/CRUD/Create";
 // import Update from "./components/CRUD/Update";
@@ -84,7 +85,8 @@ const App = () => {
       {/* <Inputdisplay /> */}
       {/* <QuoteGen /> */}
       {/* <Assignment /> */}
-      <Accordion />
+      {/* <Accordion /> */}
+      <FileUploader />
       {/* <UserContextProvider /> */}
       {/* <MyEditor /> */}
       {/* <PasswordHideShow /> */}
