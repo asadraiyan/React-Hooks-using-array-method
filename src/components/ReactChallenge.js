@@ -28,12 +28,7 @@ const ReactChallenge = () => {
     <>
       <div>
         <h1>React Challenge</h1>
-        <select
-          name=""
-          id=""
-          value={country}
-          onChange={(e) => setCountry(e.target.value)}
-        >
+        <select value={country} onChange={(e) => setCountry(e.target.value)}>
           {countries.map((item, index) => {
             return (
               <option value={index} key={index}>
