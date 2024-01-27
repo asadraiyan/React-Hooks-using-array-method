@@ -37,7 +37,8 @@
 // import UseEffecthook from "./components/UseEffecthook";
 // import MovieCard from "./components/NetflixMovies/MovieCard";
 // import ImageSlider from "./components/ImageSlider/ImageSlider";
-import FileUploader from "./components/FileUploader";
+// import FileUploader from "./components/FileUploader";
+import ReactChallenge from "./components/ReactChallenge";
 // import Accordion from "./components/accordion/Accordion";
 // import AppData from "./components/CRUD/AppData";
 // import Create from "./components/CRUD/Create";
@@ -86,7 +87,8 @@ const App = () => {
       {/* <QuoteGen /> */}
       {/* <Assignment /> */}
       {/* <Accordion /> */}
-      <FileUploader />
+      {/* <FileUploader /> */}
+      <ReactChallenge />
       {/* <UserContextProvider /> */}
       {/* <MyEditor /> */}
       {/* <PasswordHideShow /> */}

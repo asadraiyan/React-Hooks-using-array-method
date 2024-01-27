@@ -6,18 +6,9 @@ const FileUploader = () => {
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     setSelectedFile(file);
-
-    // If you want to display a preview of the image, you can use FileReader
-    // const reader = new FileReader();
-    // reader.onloadend = () => {
-    //   setPreviewURL(reader.result);
-    // };
-    // reader.readAsDataURL(file);
   };
 
   const handleUpload = () => {
-    // You can implement the logic for uploading the file to a server here
-    // For example, using the Fetch API or a library like axios
     if (selectedFile) {
       // Assuming you have an API endpoint for file upload
       const formData = new FormData();
@@ -48,7 +39,6 @@ const FileUploader = () => {
       {selectedFile && (
         <div>
           <p>Selected File: {selectedFile.name}</p>
-          {/* Display image preview here if needed */}
         </div>
       )}
       <button onClick={handleUpload}>Upload</button>
