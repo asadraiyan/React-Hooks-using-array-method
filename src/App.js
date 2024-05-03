@@ -8,6 +8,7 @@
 // import Reactlifecyclemethod from './Reactlifecyclemethod';
 // import AgeCalculator from "./components/AgeCalculator";
 // import CodingChallenge from "./components/CodingChallenge";
+// import DigitalClock from "./components/digitalclock/DigitalClock";
 // import Debouncing from "./components/Debouncing";
 // import LifecycleMethod from "./components/LifecycleMethod";
 // import PasswordGen from "./components/PasswordGen";
@@ -38,7 +39,7 @@
 // import MovieCard from "./components/NetflixMovies/MovieCard";
 // import ImageSlider from "./components/ImageSlider/ImageSlider";
 // import FileUploader from "./components/FileUploader";
-import ReactChallenge from "./components/ReactChallenge";
+// import ReactChallenge from "./components/ReactChallenge";
 // import Accordion from "./components/accordion/Accordion";
 // import AppData from "./components/CRUD/AppData";
 // import Create from "./components/CRUD/Create";
@@ -47,6 +48,13 @@ import ReactChallenge from "./components/ReactChallenge";
 // import MyEditor from "./components/MyEditor";
 // import { PasswordHideShow } from "./components/PasswordHideShow";
 // import Pagination from "./components/Pagination";
+
+// import TableList from "./components/table/TableList";
+
+// import Counter2 from "./components/Counter2";
+// import Todolist from "./components/Todolist";
+// import CreateContext from "./components/contextCounter/CreateContext";
+import FetchApi from "./components/UseFetchApi/FetchApi";
 
 // const name = "Asad Raiyan";
 // const role = "Web Developer";
@@ -88,17 +96,23 @@ const App = () => {
       {/* <Assignment /> */}
       {/* <Accordion /> */}
       {/* <FileUploader /> */}
-      <ReactChallenge />
+      {/* <ReactChallenge /> */}
+      {/* <Counter2 /> */}
+      {/* <CreateContext /> */}
+      {/* <Todolist /> */}
       {/* <UserContextProvider /> */}
       {/* <MyEditor /> */}
       {/* <PasswordHideShow /> */}
       {/* <Table /> */}
       {/* <AgeCalculator /> */}
       {/* <CodingChallenge /> */}
+      {/* <DigitalClock /> */}
       {/* <StopWatch /> */}
       {/* {/* <Counter1 /> */}
       {/* <Counter2 /> */}
       {/* <CryptoGallery /> */}
+      {/* <TableList /> */}
+      <FetchApi />
       {/* <Pagination /> */}
       {/* <ImageSlider /> */}
       {/* <PasswordGen /> */}

@@ -21,20 +21,20 @@ const CryptoGallery = () => {
     fetchData();
   }, [page]);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
-  const handleScroll = async () => {
-    if (
-      window.innerHeight + document.documentElement.scrollTop + 1 >=
-      document.documentElement.scrollHeight
-    ) {
-      setLoader(true);
-      setPage((prev) => prev + 1);
-    }
-  };
+  // const handleScroll = async () => {
+  //   if (
+  //     window.innerHeight + document.documentElement.scrollTop + 1 >=
+  //     document.documentElement.scrollHeight
+  //   ) {
+  //     setLoader(true);
+  //     setPage((prev) => prev + 1);
+  //   }
+  // };
   return (
     <>
       <div className="heading">
