@@ -17,6 +17,7 @@ const InputForm = () => {
   };
 
   const handleChange = (e) => {
+    console.log("e.target =", e.target);
     const name = e.target.name;
     const value = e.target.value;
     setFormData({

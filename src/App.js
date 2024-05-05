@@ -11,7 +11,7 @@
 // import DigitalClock from "./components/digitalclock/DigitalClock";
 // import Debouncing from "./components/Debouncing";
 // import LifecycleMethod from "./components/LifecycleMethod";
-// import PasswordGen from "./components/PasswordGen";
+import PasswordGen from "./components/PasswordGen";
 // import Table from "./components/Table";
 // import Counter from "./components/Counter";
 // import Inputdisplay from "./components/Inputdisplay";
@@ -54,7 +54,7 @@
 // import Counter2 from "./components/Counter2";
 // import Todolist from "./components/Todolist";
 // import CreateContext from "./components/contextCounter/CreateContext";
-import FetchApi from "./components/UseFetchApi/FetchApi";
+// import FetchApi from "./components/UseFetchApi/FetchApi";
 
 // const name = "Asad Raiyan";
 // const role = "Web Developer";
@@ -112,10 +112,10 @@ const App = () => {
       {/* <Counter2 /> */}
       {/* <CryptoGallery /> */}
       {/* <TableList /> */}
-      <FetchApi />
+      {/* <FetchApi /> */}
       {/* <Pagination /> */}
       {/* <ImageSlider /> */}
-      {/* <PasswordGen /> */}
+      <PasswordGen />
       {/* <LifecycleMethod /> */}
       {/* <Debouncing /> */}
       {/* <MovieCard /> */}

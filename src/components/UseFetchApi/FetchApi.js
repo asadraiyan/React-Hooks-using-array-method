@@ -6,7 +6,7 @@ const FetchApi = () => {
     "https://jsonplaceholder.typicode.com/users"
   );
 
-  if (loading) return <h1>Loading....</h1>;
+  if (loading) return <h1>Loading...</h1>;
   if (error) return <h1>Something went wrong</h1>;
   return (
     <div>

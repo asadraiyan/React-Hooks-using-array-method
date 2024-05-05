@@ -11,14 +11,11 @@ const PasswordGen = () => {
 
   const handleGenerate = () => {
     if (input) {
-      characterList = characterList + upperCase;
-      characterList = characterList + lowerCase;
-      characterList = characterList + numbers;
-      characterList = characterList + specialChar;
+      characterList += upperCase + lowerCase + numbers + specialChar;
     }
     setInput(createPassword(characterList));
-    console.log(characterList);
-    console.log(characterList.length);
+    // console.log(characterList);
+    // console.log(characterList.length);
   };
 
   const createPassword = (characterList) => {
@@ -26,8 +23,8 @@ const PasswordGen = () => {
     for (let i = 0; i < 10; i++) {
       const characterIndex = Math.round(Math.random() * characterList.length);
       console.log(characterIndex);
-      password = password + characterList.charAt(characterIndex);
-      console.log(password);
+      password += characterList.charAt(characterIndex);
+      // console.log(password);
     }
     return password;
   };
@@ -39,6 +36,7 @@ const PasswordGen = () => {
         type="text"
         onChange={(e) => setInput(e.target.value)}
         value={input}
+        readOnly
       />
       <button onClick={handleGenerate}>Generate</button>
     </div>
