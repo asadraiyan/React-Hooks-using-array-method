@@ -24,7 +24,7 @@ const PasswordGen = () => {
       const characterIndex = Math.round(Math.random() * characterList.length);
       console.log(characterIndex);
       password += characterList.charAt(characterIndex);
-      console.log(password);
+      // console.log(password);
     }
     return password;
   };
