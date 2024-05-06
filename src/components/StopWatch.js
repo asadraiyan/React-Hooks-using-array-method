@@ -6,7 +6,6 @@ const StopWatch = () => {
   const [clearTime, setClearTime] = useState();
 
   const handleStart = () => {
-    startRun();
     setClearTime(setInterval(startRun, 1000));
   };
   const startRun = () => {

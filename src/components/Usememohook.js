@@ -5,9 +5,10 @@ const Usememohook = () => {
   const [minus, setMinus] = useState(100);
 
   const multiply = useMemo(() => {
-    console.log("*******");
+    console.log("multiplied run");
     return add * 5;
   }, [add]);
+
   return (
     <div>
       <h1>useMemo Hook</h1>

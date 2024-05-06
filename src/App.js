@@ -11,14 +11,14 @@
 // import DigitalClock from "./components/digitalclock/DigitalClock";
 // import Debouncing from "./components/Debouncing";
 // import LifecycleMethod from "./components/LifecycleMethod";
-import PasswordGen from "./components/PasswordGen";
+// import PasswordGen from "./components/PasswordGen";
 // import Table from "./components/Table";
 // import Counter from "./components/Counter";
 // import Inputdisplay from "./components/Inputdisplay";
 // import Todofy from "./components/Todofy";
 // import QuoteGen from "./components/QuoteGen"
 // import UseCallback from "./components/UseCallback";
-// import Usememohook from "./components/Usememohook";
+import Usememohook from "./components/Usememohook";
 // import Userefhook from "./components/Userefhook";
 // import Home from "./components/Home";
 // import Search from "./components/Search";
@@ -82,7 +82,7 @@ const App = () => {
       {/* <Reactlifecyclemethod /> */}
       {/* <Userefhook /> */}
       {/* <UseEffecthook /> */}
-      {/* <Usememohook /> */}
+      <Usememohook />
       {/* <UseCallback /> */}
       {/* <UseContext /> */}
       {/* <Counter /> */}
@@ -115,7 +115,7 @@ const App = () => {
       {/* <FetchApi /> */}
       {/* <Pagination /> */}
       {/* <ImageSlider /> */}
-      <PasswordGen />
+      {/* <PasswordGen /> */}
       {/* <LifecycleMethod /> */}
       {/* <Debouncing /> */}
       {/* <MovieCard /> */}
