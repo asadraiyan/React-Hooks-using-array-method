@@ -35,6 +35,18 @@ const CryptoGallery = () => {
   //     setPage((prev) => prev + 1);
   //   }
   // };
+
+  // useEffect(() => {
+  //   const data = "Asad";
+  //   fetch("", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //       "Access-Control-Allow-Origin": "*",
+  //     },
+  //     body: JSON.stringify(data),
+  //   });
+  // }, []);
   return (
     <>
       <div className="heading">

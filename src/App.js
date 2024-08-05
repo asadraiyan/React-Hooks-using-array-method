@@ -11,7 +11,7 @@
 // import DigitalClock from "./components/digitalclock/DigitalClock";
 // import Debouncing from "./components/Debouncing";
 // import LifecycleMethod from "./components/LifecycleMethod";
-import PasswordGen from "./components/PasswordGen";
+// import PasswordGen from "./components/PasswordGen";
 // import Table from "./components/Table";
 // import Counter from "./components/Counter";
 // import Inputdisplay from "./components/Inputdisplay";
@@ -48,6 +48,14 @@ import PasswordGen from "./components/PasswordGen";
 // import MyEditor from "./components/MyEditor";
 // import { PasswordHideShow } from "./components/PasswordHideShow";
 // import Pagination from "./components/Pagination";
+
+import ExpenseTracker from "./components/ExpenseTracker/ExpenseTracker";
+
+// import StarRating from "./components/StarRatingComponent/StarRating";
+
+// import MovieSeatBooking from "./components/MovieSeatBooking/MovieSeatBooking";
+
+// import RandomColorGen from "./components/RandomColorGen/RandomColorGen";
 
 // import TableList from "./components/table/TableList";
 
@@ -90,8 +98,12 @@ const App = () => {
       {/* <NoteApp /> */}
       {/* <LandingPage /> */}
       {/* <InputForm /> */}
+      {/* <RandomColorGen /> */}
+      {/* <MovieSeatBooking /> */}
+      {/* <StarRating /> */}
       {/* <Axios /> */}
       {/* <Inputdisplay /> */}
+      <ExpenseTracker />
       {/* <QuoteGen /> */}
       {/* <Assignment /> */}
       {/* <Accordion /> */}
@@ -115,7 +127,7 @@ const App = () => {
       {/* <FetchApi /> */}
       {/* <Pagination /> */}
       {/* <ImageSlider /> */}
-      <PasswordGen />
+      {/* <PasswordGen /> */}
       {/* <LifecycleMethod /> */}
       {/* <Debouncing /> */}
       {/* <MovieCard /> */}

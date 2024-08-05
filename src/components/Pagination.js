@@ -7,6 +7,7 @@ const Pagination = () => {
   const [postsPerPage] = useState(10);
   const [input, setInput] = useState();
   const [loader, setLoader] = useState(true);
+
   const fetchProducts = async () => {
     const response = await fetch("https://dummyjson.com/products?limit=100");
     const result = await response.json();
@@ -14,11 +15,13 @@ const Pagination = () => {
     setProductData(result.products);
     setLoader(false);
   };
+
   useEffect(() => {
     return () => {
       fetchProducts();
     };
   }, []);
+
   const handleInputChange = (e) => {
     setInput(e.target.value);
     setLoader(true);

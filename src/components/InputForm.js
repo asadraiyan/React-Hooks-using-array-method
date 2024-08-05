@@ -29,7 +29,9 @@ const InputForm = () => {
 
   const validate = (values) => {
     let errors = {};
-    // let strongPassword = new RegExp("^(?=.*[A-Za-z])(?=.*d)[A-Za-zd]{8,}$");
+    let strongPassword = new RegExp(
+      "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\\W)(?!.* ).{8,16}$"
+    );
     if (values.userName === "") {
       errors.userName = "Username is required";
       return errors;
@@ -51,11 +53,11 @@ const InputForm = () => {
       errors.password = "Password is required";
       return errors;
     }
-    // if (!strongPassword.test(values.password)) {
-    //   errors.password =
-    //     "Must have minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character";
-    //   return errors;
-    // }
+    if (!strongPassword.test(values.password)) {
+      errors.password =
+        "Must have minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character";
+      return errors;
+    }
     setFormData("");
     setErrorMessage({});
     setSubmit(true);
@@ -114,3 +116,5 @@ const InputForm = () => {
 };
 
 export default InputForm;
+
+// S24171O6N2604241200060

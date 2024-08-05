@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #242333;
+  color: #fff;
+  font-family: sans-serif;
+}
+.movie_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pick_movie {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+select {
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  font-family: 15px;
+  margin-left: 10px;
+  padding: 5px 15px;
+}
+.showcase {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  margin-top: 1rem;
+}
+.showcase li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.seat {
+  display: flex;
+  margin: 3px;
+  width: 15px;
+  height: 12px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #444451;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.seat.selected {
+  background-color: #6feaf6;
+}
+.seat.occupied {
+  background-color: #fff;
+}
+
+.row {
+  display: flex;
+  /* border: 2px solid blue; */
+  width: 100%;
+  gap: 12px;
+}
+.screen {
+  background-color: #fff;
+  height: 100px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+.column1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 42px;
+  /* border: 2px solid red; */
+}
+.column2 {
+  /* border: 2px solid red; */
+  width: 84px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.column3 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 42px;
+  /* border: 2px solid red; */
+}
+
+.text {
+  margin-top: 1rem;
+}
+.text span {
+  color: #6feaf6;
+}
