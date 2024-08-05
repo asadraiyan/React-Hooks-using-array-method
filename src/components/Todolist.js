@@ -95,24 +95,24 @@ const Todolist = () => {
     setTodo([...arr]);
   };
 
-  const temp = [
-    {
-      price: "11.2",
-      label: "xyz",
-    },
-    {
-      price: 2.1,
-      label: "xyz",
-    },
-    {
-      price: null,
-      label: "xyz",
-    },
-    {
-      price: undefined,
-      label: "xyz",
-    },
-  ];
+  // const temp = [
+  //   {
+  //     price: "11.2",
+  //     label: "xyz",
+  //   },
+  //   {
+  //     price: 2.1,
+  //     label: "xyz",
+  //   },
+  //   {
+  //     price: null,
+  //     label: "xyz",
+  //   },
+  //   {
+  //     price: undefined,
+  //     label: "xyz",
+  //   },
+  // ];
 
   return (
     <>

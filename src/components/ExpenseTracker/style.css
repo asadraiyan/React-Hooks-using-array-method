@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  /* border: 2px solid blue; */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.item-name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.item-amount {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.btns {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.btns button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.totalAmount {
+  margin-top: 10px;
+  text-align: center;
+}

@@ -1,37 +1,42 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const Inputdisplay = () => {
   const [input, setInput] = useState("");
-  const [item, setItem] = useState(
-    JSON.parse(localStorage.getItem("input")) || []
-  );
+  const [items, setItems] = useState([]);
+  const [edit, setEdit] = useState(false);
+  const [editInput, setEditInput] = useState("");
+  const [editId, setEditId] = useState(null);
+
   const handleChange = (e) => {
     setInput(e.target.value);
   };
+
   const handleClick = () => {
     if (input === "") {
       return;
     }
-    setItem((oldItem) => {
-      console.log(oldItem);
-      return [...oldItem, input];
-    });
+    setItems((oldItems) => [...oldItems, input]);
     setInput("");
   };
+
   const deleteHandler = (id) => {
-    setItem((oldItem) => {
-      return oldItem.filter((curelem, index) => {
-        return index !== id;
-      });
-    });
+    setItems((oldItems) => oldItems.filter((_, index) => index !== id));
   };
 
-  useEffect(() => {
-    const saveLocalInput = () => {
-      localStorage.setItem("input", JSON.stringify(item));
-    };
-    saveLocalInput();
-  }, [item]);
+  const editHandler = (id) => {
+    setEdit(true);
+    setEditInput(items[id]);
+    setEditId(id);
+  };
+
+  const handleEditSubmit = () => {
+    setItems((oldItems) =>
+      oldItems.map((item, index) => (index === editId ? editInput : item))
+    );
+    setEdit(false);
+    setEditInput("");
+    setEditId(null);
+  };
 
   return (
     <>
@@ -49,25 +54,45 @@ const Inputdisplay = () => {
         </button>
 
         <ol style={{ display: "flex", flexDirection: "column" }}>
-          {item?.map((curValue, id) => {
-            return (
-              <>
-                <div
-                  className="item-container"
-                  style={{ display: "flex", flexDirection: "row" }}
-                  key={id}
-                >
-                  <li key={id}>{curValue}</li>
+          {items.map((curValue, id) => (
+            <div
+              className="item-container"
+              style={{ display: "flex", flexDirection: "row" }}
+              key={id}
+            >
+              {edit && editId === id ? (
+                <>
+                  <input
+                    type="text"
+                    onChange={(e) => setEditInput(e.target.value)}
+                    value={editInput}
+                  />
+                  <button
+                    style={{ marginLeft: "10px", marginTop: "5px" }}
+                    onClick={handleEditSubmit}
+                  >
+                    Save
+                  </button>
+                </>
+              ) : (
+                <>
+                  <li>{curValue}</li>
+                  <button
+                    style={{ marginLeft: "10px", marginTop: "5px" }}
+                    onClick={() => editHandler(id)}
+                  >
+                    Edit
+                  </button>
                   <button
                     style={{ marginLeft: "10px", marginTop: "5px" }}
                     onClick={() => deleteHandler(id)}
                   >
                     Delete
                   </button>
-                </div>
-              </>
-            );
-          })}
+                </>
+              )}
+            </div>
+          ))}
         </ol>
       </div>
     </>

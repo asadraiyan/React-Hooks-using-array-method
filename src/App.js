@@ -18,7 +18,7 @@
 // import Todofy from "./components/Todofy";
 // import QuoteGen from "./components/QuoteGen"
 // import UseCallback from "./components/UseCallback";
-import Usememohook from "./components/Usememohook";
+// import Usememohook from "./components/Usememohook";
 // import Userefhook from "./components/Userefhook";
 // import Home from "./components/Home";
 // import Search from "./components/Search";
@@ -48,6 +48,14 @@ import Usememohook from "./components/Usememohook";
 // import MyEditor from "./components/MyEditor";
 // import { PasswordHideShow } from "./components/PasswordHideShow";
 // import Pagination from "./components/Pagination";
+
+import ExpenseTracker from "./components/ExpenseTracker/ExpenseTracker";
+
+// import StarRating from "./components/StarRatingComponent/StarRating";
+
+// import MovieSeatBooking from "./components/MovieSeatBooking/MovieSeatBooking";
+
+// import RandomColorGen from "./components/RandomColorGen/RandomColorGen";
 
 // import TableList from "./components/table/TableList";
 
@@ -82,7 +90,7 @@ const App = () => {
       {/* <Reactlifecyclemethod /> */}
       {/* <Userefhook /> */}
       {/* <UseEffecthook /> */}
-      <Usememohook />
+      {/* <Usememohook /> */}
       {/* <UseCallback /> */}
       {/* <UseContext /> */}
       {/* <Counter /> */}
@@ -90,8 +98,12 @@ const App = () => {
       {/* <NoteApp /> */}
       {/* <LandingPage /> */}
       {/* <InputForm /> */}
+      {/* <RandomColorGen /> */}
+      {/* <MovieSeatBooking /> */}
+      {/* <StarRating /> */}
       {/* <Axios /> */}
       {/* <Inputdisplay /> */}
+      <ExpenseTracker />
       {/* <QuoteGen /> */}
       {/* <Assignment /> */}
       {/* <Accordion /> */}

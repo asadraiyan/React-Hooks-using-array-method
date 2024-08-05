@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { imageData } from "./ImageData";
 
 const ImageSlider = () => {
   const [image, setImage] = useState(0);
+
+  const sliderRef = useRef(null);
 
   const handlePrevious = () => {
     if (image === 0) {
@@ -20,11 +22,11 @@ const ImageSlider = () => {
   };
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    sliderRef.current = setTimeout(() => {
       handleNext();
-    }, 3000);
+    }, 1500);
     return () => {
-      clearTimeout(timer);
+      clearTimeout(sliderRef.current);
     };
   }, [image]);
   return (
@@ -35,6 +37,12 @@ const ImageSlider = () => {
           flexDirection: "column",
           alignItems: "center",
         }}
+        onMouseEnter={() => clearInterval(sliderRef.current)}
+        onMouseLeave={() =>
+          (sliderRef.current = setTimeout(() => {
+            handleNext();
+          }, 1500))
+        }
       >
         <h1>The Image Slider</h1>
         <div
